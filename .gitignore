@@ -1,0 +1,9 @@
+MainApp/.gradle
+MainApp/.idea
+MainApp/app/build
+MainApp/local.properties
+
+SubModulesDemo/.gradle
+SubModulesDemo/.idea
+SubModulesDemo/app/build
+SubModulesDemo/local.properties
