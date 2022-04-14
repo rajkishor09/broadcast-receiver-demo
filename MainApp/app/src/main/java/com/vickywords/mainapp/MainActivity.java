@@ -36,4 +36,13 @@ public class MainActivity extends AppCompatActivity {
             Log.d(TAG, "Package: " + actionName + " was not found on this device.");
         }
     }
+
+    public void launchPackage(View view){
+        String packageName = "com.vickywords.submodulesdemo";
+        String activityName = "com.vickywords.submodulesdemo.MainActivity";
+
+        Intent intent = new Intent( Intent.ACTION_MAIN );
+        intent.setClassName( packageName, activityName);
+        getApplicationContext().startActivity( intent );
+    }
 }

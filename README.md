@@ -13,6 +13,12 @@ To accomplish above tasks we have 2 apps:
 
 ## Order of installation
 
-The MainApp has custom permission which is used while broadcasting message. As per [official document (note section)](https://developer.android.com/guide/components/broadcasts#sending-broadcasts-permissions) we must install MainApp first and then SubModulesDemo app.
+The MainApp has custom permission which is used while broadcasting message to submodules. As per [official document (note section)](https://developer.android.com/guide/components/broadcasts#sending-broadcasts-permissions) we must install MainApp first and then SubModulesDemo app.
 
 Check MainApp (AndroidManifest.xml)[MainApp\app\src\main\AndroidManifest.xml] for custom permission.
+
+### Changelog
+
+- April 14th, 2022
+  - Updated SubModulesDemo (AndroidManifest.xml)[SubModulesDemo\app\src\main\AndroidManifest.xml] to include full activity name.
+  - Added a new button in MainApp. Now we can launch submodule by sending broadcast or by `Package Name` & `Full Activity Name`. Check `launchPackage` method in [MainActivity.java](./MainApp/app/src/main/java/com/vickywords/mainapp/MainActivity.java)
